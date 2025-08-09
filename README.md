@@ -8,7 +8,7 @@ A comprehensive template for getting started with Context Engineering - the disc
 
 ```bash
 # 1. Clone this template
-git clone https://github.com/coleam00/Context-Engineering-Intro.git
+git clone https://github.com/SilverJim/context-engineering-intro-for-roocode.git
 cd Context-Engineering-Intro
 
 # 2. Set up your project rules (optional - template provided)
@@ -18,14 +18,14 @@ cd Context-Engineering-Intro
 # Place relevant code examples in the examples/ folder
 
 # 4. Create your initial feature request
-# Edit INITIAL.md with your feature requirements
+# Edit INITIAL.md with your feature requirements (INITIAL.md and .roo/rules/rules.md can also be generated using command /auto-initial <arg:goals> )
 
 # 5. Generate a comprehensive PRP (Product Requirements Prompt)
-# In Claude Code, run:
+# In RooCode, run:
 /generate-prp INITIAL.md
 
 # 6. Execute the PRP to implement your feature
-# In Claude Code, run:
+# In RooCode, run:
 /execute-prp PRPs/your-feature-name.md
 ```
 
@@ -70,9 +70,8 @@ context-engineering-intro/
 │   ├── commands/
 │   │   ├── generate-prp.md    # Generates comprehensive PRPs
 │   │   └── execute-prp.md     # Executes PRPs to implement features
-│   ├── rules/
-│   │   └── rules.md                 # Global rules for AI assistant
-│   └── settings.local.json    # Claude Code permissions
+│   └── rules/
+│       └── rules.md                 # Global rules for AI assistant
 ├── PRPs/
 │   ├── templates/
 │   │   └── prp_base.md       # Base template for PRPs
@@ -130,7 +129,7 @@ PRPs (Product Requirements Prompts) are comprehensive implementation blueprints 
 
 They are similar to PRDs (Product Requirements Documents) but are crafted more specifically to instruct an AI coding assistant.
 
-Run in Claude Code:
+Run in RooCode:
 ```bash
 /generate-prp INITIAL.md
 ```
